@@ -58,7 +58,9 @@ const getBotResponse2 = async (userMessage: string): Promise<messageIProps> => {
 
 const fetchResponseFromPythonModal = async (message: string): Promise<messageIProps> => {
   try {
+
       const res = await fetch("https://chatbot-backend-pdn7.onrender.com/chat", {
+
           method: "POST",
           headers: {
               "Content-Type": "application/json",
