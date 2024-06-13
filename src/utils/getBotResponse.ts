@@ -58,7 +58,7 @@ const getBotResponse2 = async (userMessage: string): Promise<messageIProps> => {
 
 const fetchResponseFromPythonModal = async (message: string): Promise<messageIProps> => {
   try {
-      const res = await fetch("http://localhost:5000/chat", {
+      const res = await fetch("https://34.211.200.85:5000/api/chat", {
           method: "POST",
           headers: {
               "Content-Type": "application/json",
